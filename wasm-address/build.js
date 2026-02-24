@@ -28,7 +28,7 @@ async function build() {
                         "--no-default-features",
                         "--features", "serial",
                     ],
-                    wasmOpt: ["-O"],
+                    wasmOpt: ["-O", "--enable-bulk-memory", "--enable-nontrapping-float-to-int"],
                 },
 
                 experimental: {
